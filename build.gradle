@@ -9,11 +9,10 @@ buildscript {
         maven { url 'https://jitpack.io' }
         mavenCentral()
         google()
-        // noinspection JcenterRepositoryObsolete
-        jcenter()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:4.1.2'
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
     }
 }
 
@@ -26,7 +25,6 @@ allprojects {
         mavenCentral()
         google()
         // noinspection JcenterRepositoryObsolete
-        jcenter()
     }
 
     // 将构建文件统一输出到项目根目录下的 build 文件夹

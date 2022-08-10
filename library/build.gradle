@@ -1,10 +1,10 @@
 apply plugin: 'com.android.library'
-
+apply plugin: 'com.github.dcendents.android-maven'
 android {
-    compileSdkVersion 32
+    compileSdkVersion 31
 
     defaultConfig {
-        minSdkVersion 14
+        minSdkVersion 21
         versionCode 1500
         versionName "15.0"
     }
@@ -42,7 +42,7 @@ afterEvaluate {
 
 dependencies {
     // noinspection GradleCompatible
-    implementation 'com.android.support:support-fragment:24.2.0'
+    implementation 'androidx.fragment:fragment:1.0.0'
 }
 
 tasks.withType(Javadoc) {
